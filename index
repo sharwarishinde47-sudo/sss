@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GlowUp Beauty</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --baby-pink: #f8cde9;
+            --dark-pink: #d46ba3;
+            --white: #fff;
+            --text: #333;
+        }
+
+        body {
+            background-color: #fff0f6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--baby-pink);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark-pink);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ffe6f0;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: var(--dark-pink);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: var(--dark-pink);
+            color: var(--white);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b35989;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff0f6;
+        }
+
+        .products h2 {
+            color: var(--dark-pink);
+            margin-bottom: 30px;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .product-card h3 {
+            color: var(--text);
+            margin: 10px 0 5px;
+        }
+
+        .product-card p {
+            color: var(--dark-pink);
+            font-weight: bold;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: var(--dark-pink);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #b35989;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--baby-pink);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #444;
+            margin-top: 40px;
+        }
+
+        /* Mobile Friendly */
+        @media (max-width: 600px) {
+            .product-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">GlowUp Beauty</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Feel Beautiful, Be Confident</h1>
+        <p>Explore our new collection of beauty products!</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+
+    <section class="products">
+        <h2>Our Bestsellers</h2>
+        <div class="product-list">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1600180758890-6d4ec5a6cd08?auto=format&fit=crop&w=600&q=80" alt="Lipstick">
+                <h3>Matte Lipstick</h3>
+                <p>$14.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611078489935-cd99e17f6f08?auto=format&fit=crop&w=600&q=80" alt="Foundation">
+                <h3>Liquid Foundation</h3>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1620812098421-3c32983f005d?auto=format&fit=crop&w=600&q=80" alt="Blush">
+                <h3>Peach Blush</h3>
+                <p>$9.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GlowUp Beauty. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
